@@ -9,17 +9,17 @@ export const imageGeneration = async (prompt) => {
         Authorization: `Bearer ${dalleApi}`,
         
     }
-    
+    const requestBody = {
+        prompt: prompt,
+        n: 1,
+        size: '1024x1024'
+    };
 
     try {
         const response = await fetch("https://api.openai.com/v1/images/generations", {
             method: "POST",
             headers: headers,
-            body: JSON.stringify({
-                prompt: prompt,
-                n: 1,
-                size: '1024x1024'
-            }),
+            body: JSON.stringify(requestBody),
                    
         });
 

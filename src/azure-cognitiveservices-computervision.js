@@ -1,9 +1,4 @@
-// ./src/azure-cognitiveservices-computervision.js
 
-// List of sample images to use in demo
-
-
-// Authentication requirements
 const key = process.env.REACT_APP_AZURE_COMPUTER_VISION_KEY;
 const endpoint = process.env.REACT_APP_AZURE_COMPUTER_VISION_ENDPOINT;
 

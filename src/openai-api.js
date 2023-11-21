@@ -6,7 +6,7 @@ export const imageGeneration = async (prompt) => {
 
     const headers = {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${dalleApi}`,
+        'Authorization': `Bearer ${dalleApi}`,
         
     }
     const requestBody = {
